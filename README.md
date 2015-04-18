@@ -1,4 +1,4 @@
-# xapi-iot-hackathon
+# 2015 xapi-iot-hackathon at the Thingstitute in Rockville, MD
 
 This repository will house various artifacts generated from the 2015 xAPI Internet of Things Hackathon.
 
