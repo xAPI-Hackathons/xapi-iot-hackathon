@@ -1,0 +1,25 @@
+{
+    "actor": {
+        "mbox": "mailto:tyler.mulligan.ctr@adlnet.gov",
+        "name": "EMT_001",
+        "objectType": "Agent"
+    },
+    "verb": {
+        "id": "http://adlnet.gov/expapi/verbs/initialized",
+        "display": {
+            "en-US": "initialized"
+        }
+    },
+    "object": {
+        "id": "http://adlnet.gov/expapi/activities/example",
+        "definition": {
+            "name": {
+                "en-US": "beacon_tag"
+            },
+            "description": {
+                "en-US": "beacon_tag is operating"
+            }
+        },
+        "objectType": "Activity"
+    }
+}
