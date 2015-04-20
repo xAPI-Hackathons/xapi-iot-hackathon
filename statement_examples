@@ -1,3 +1,4 @@
+// EMT pinning a patient with a beacon
 {
     "actor": {
         "mbox": "mailto:tyler.mulligan.ctr@adlnet.gov",
@@ -22,4 +23,76 @@
         },
         "objectType": "Activity"
     }
+}
+
+// Instructor observes EMT001 defribulating patient
+{
+  "verb": {
+    "id": "http://adlnet.gov/expapi/verbs/observed",
+    "display": {
+      "en-US": "observed"
+    }
+  },
+  "version": "1.0.0",
+  "timestamp": "2015-04-18T16:32:04.089636+00:00",
+  "object": {
+    "mbox": "mailto:altierian@gmail.com",
+    "name": "EMT001",
+    "objectType": "Agent"
+  },
+  "actor": {
+    "mbox": "mailto:tyler.mulligan.ctr@adlnet.gov",
+    "name": "instructor",
+    "objectType": "Agent"
+  },
+  "stored": "2015-04-18T16:32:04.089636+00:00",
+  "authority": {
+    "mbox": "mailto:tyler.mulligan.ctr+xapi-tools@adlnet.gov",
+    "name": "xapi-tools",
+    "objectType": "Agent"
+  },
+  "context": {
+    "contextActivities": {
+      "category": [
+        {
+          "id": "http://example.com/xapi/profile/simulation"
+        }
+      ],
+      "parent": [
+        {
+          "definition": {
+            "name": {
+              "en-US": "defrib"
+            },
+            "description": {
+              "en-US": "Shock the dude!"
+            }
+          },
+          "id": "http://adlnet.github.io/xapi-lab/defribulate",
+          "objectType": "Activity"
+        }
+      ],
+      "grouping": [
+        {
+          "definition": {
+            "name": {
+              "en-US": "Ambulance training simulation"
+            }
+          },
+          "id": "http://adlnet.github.io/xapi-lab/amb_sim.html",
+          "objectType": "Activity"
+        },
+        {
+          "definition": {
+            "name": {
+              "en-US": "Event 04182014"
+            }
+          },
+          "id": "http://adlnet.github.io/xapi-lab/event_04182014.html",
+          "objectType": "Activity"
+        }
+      ]
+    }
+  },
+  "id": "cbe5dbd5-8d05-4008-b49a-3fb02286b3ba"
 }
